@@ -121,16 +121,16 @@ bindsym $mod+a focus parent
 ####################
 
 # Workspace Variables
-set $ws1 "I"
-set $ws2 "II"
-set $ws3 "III"
-set $ws4 "IV"
-set $ws5 "V"
-set $ws6 "VI"
-set $ws7 "VII"
-set $ws8 "VIII"
-set $ws9 "IX"
-set $ws10 "X"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # Switch Workspace
 bindsym $mod+1 workspace $ws1
@@ -175,16 +175,19 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+# bar {
+#        status_command i3status
+# }
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #####################
 # Program Shortcuts #
 #####################
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+# bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec termite
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -194,8 +197,8 @@ bindsym $mod+d exec dmenu_run
 ############
 
 for_window [class="^.*"] border pixel 0
-gaps inner 25
-gaps outer 15
+gaps inner 15
+gaps outer 5
 
 #########################
 # wallpaper and compton #
