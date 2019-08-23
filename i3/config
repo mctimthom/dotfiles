@@ -86,7 +86,7 @@ floating_modifier $mod
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        
+
         # resize vim style
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
@@ -196,15 +196,23 @@ bindsym $mod+d exec dmenu_run
 # set gaps #
 ############
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 0.5
 gaps inner 15
 gaps outer 5
+
+###################
+# Keyboard Layout #
+###################
+
+# exec --no-startup-id setxkbmap gb,us -option 'grp:alt_shift_toggle'
 
 #########################
 # wallpaper and compton #
 #########################
 
-exec --no-startup-id feh --bg-scale /home/timthom/Pictures/akira_panel.jpg
+# exec --no-startup-id feh --bg-scale /home/timthom/Pictures/akira_panel.jpg
+# exec --no-startup-id feh --bg-scale /home/timthom/Pictures/akira_red_min_2.jpg
+exec --no-startup-id feh --bg-scale /home/timthom/Pictures/cerberus_pup.jpg
 exec --no-startup-id compton -b
 
 ##########################
