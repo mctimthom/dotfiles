@@ -189,14 +189,16 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Return exec termite
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# start dmenu or rofi (a program launcher)
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run -lines 10 -opacity "85"
+
 
 ############
 # set gaps #
 ############
 
-for_window [class="^.*"] border pixel 0.5
+for_window [class="^.*"] border pixel 1
 gaps inner 15
 gaps outer 5
 
@@ -204,15 +206,17 @@ gaps outer 5
 # Keyboard Layout #
 ###################
 
-# exec --no-startup-id setxkbmap gb,us -option 'grp:alt_shift_toggle'
+# exec --no-startup-id setxkbmap us,ko -option 'grp:alt_shift_toggle'
 
 #########################
 # wallpaper and compton #
 #########################
 
+# exec --no-startup-id feh --bg-scale /home/timthom/Pictures/solarized-wallpaper-arch.png
 # exec --no-startup-id feh --bg-scale /home/timthom/Pictures/akira_panel.jpg
 # exec --no-startup-id feh --bg-scale /home/timthom/Pictures/akira_red_min_2.jpg
 exec --no-startup-id feh --bg-scale /home/timthom/Pictures/cerberus_pup.jpg
+# exec --no-startup-id feh --bg-scale /home/timthom/Pictures/blue_chainsaw.jpg
 exec --no-startup-id compton -b
 
 ##########################

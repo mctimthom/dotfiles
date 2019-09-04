@@ -2,6 +2,47 @@
 font = Monospace Bold 14
 
 [colors]
+###### Solarized Dark ######
+# special
+foreground      = #93a1a1
+foreground_bold = #93a1a1
+cursor          = #93a1a1
+#background      = #002b36
+background      = rgba(0,43,54, 0.9)
+
+# black
+color0  = #002b36
+color8  = #657b83
+
+# red
+color1  = #dc322f
+color9  = #dc322f
+
+# green
+color2  = #859900
+color10 = #859900
+
+# yellow
+color3  = #b58900
+color11 = #b58900
+
+# blue
+color4  = #268bd2
+color12 = #268bd2
+
+# magenta
+color5  = #6c71c4
+color13 = #6c71c4
+
+# cyan
+color6  = #2aa198
+color14 = #2aa198
+
+# white
+color7  = #93a1a1
+color15 = #fdf6e3
+
+
 ###### Neon ######
 # # special
 # foreground      = #d0d0d0
@@ -199,42 +240,42 @@ font = Monospace Bold 14
 # color15 = #ffffff
 
 ##### RED PHOENIX #####
-# special
-foreground      = #919191
-foreground_bold = #919191
-cursor          = #919191
-# background      = #000000
-background = rgba(0, 0, 0, 0.9)
+# # special
+# foreground      = #919191
+# foreground_bold = #919191
+# cursor          = #919191
+# # background      = #000000
+# background = rgba(0, 0, 0, 0.9)
 
 
-# black
-color0  = #303030
-color8  = #5e5e5e
+# # black
+# color0  = #303030
+# color8  = #5e5e5e
 
-# red
-color1  = #c10023
-color9  = #ff8781
+# # red
+# color1  = #c10023
+# color9  = #ff8781
 
-# green
-color2  = #a83334
-color10 = #ffa095
+# # green
+# color2  = #a83334
+# color10 = #ffa095
 
-# yellow
-color3  = #b51d2c
-color11 = #ff948b
+# # yellow
+# color3  = #b51d2c
+# color11 = #ff948b
 
-# blue
-color4  = #8c4b46
-color12 = #feb2aa
+# # blue
+# color4  = #8c4b46
+# color12 = #feb2aa
 
-# magenta
-color5  = #7d534f
-color13 = #ebbbb5
+# # magenta
+# color5  = #7d534f
+# color13 = #ebbbb5
 
-# cyan
-color6  = #9a413d
-color14 = #ffaaa0
+# # cyan
+# color6  = #9a413d
+# color14 = #ffaaa0
 
-# white
-color7  = #c6c6c6
-color15 = #ffffff
+# # white
+# color7  = #c6c6c6
+# color15 = #ffffff
